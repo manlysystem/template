@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Required Meta Tags (SEO)-->
+  <meta name="author" content="manlydev">
+  <meta name="copyright" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="title" content="">
+  <meta name="usertoken" content="<?php echo sha1(rand(1, 9999999)); ?>">
+  <!--Başlık-->
+  <title>Shakes & Fidget</title>
+  <!--Favicon-->
+  <link rel="icon" href="https://iconarchive.com/download/i98433/dakirby309/simply-styled/Security-Approved.ico">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!--Css Dosyaları-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <style class="main">
+    body {
+      font-family: 'Poppins', sans-serif;
+      top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    .carousel {
+      margin-bottom: 4rem;
+    }
+
+    .carousel-caption {
+      bottom: 3rem;
+      z-index: 10;
+    }
+
+    .carousel-item {
+      height: 32rem;
+    }
+
+    .carousel-item>img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 32rem;
+    }
+
+    .marketing .col-lg-4 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .marketing h2 {
+      font-weight: 400;
+    }
+
+    .marketing .col-lg-4 p {
+      margin-right: .75rem;
+      margin-left: .75rem;
+    }
+
+    .featurette-divider {
+      margin: 5rem 0;
+    }
+
+    .featurette-heading {
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -.05rem;
+    }
+
+    @media (min-width: 40em) {
+      .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+
+      .featurette-heading {
+        font-size: 50px;
+      }
+    }
+
+    @media (min-width: 62em) {
+      .featurette-heading {
+        margin-top: 7rem;
+      }
+    }
+
+    #goog-gt-tt {
+      display: none !important;
+    }
+
+    .goog-te-banner-frame {
+      display: none !important;
+    }
+
+    .goog-te-menu-value:hover {
+      text-decoration: none !important;
+    }
+
+    #google_translate_element2 {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body translate="on" id="js" class="bg-dark text-white">
+  <!--Üst Bölüm Mesajı-->
+  <div class="alert alert-warning alert-dismissible fade show mb-0 text-center mt-0" role="alert">
+    <strong>Hello!</strong> We would love to see you on our discord server! <a href="https://discord.gg/JgTEu3NJf4" target="_blank">https://discord.gg/JgTEu3NJf4</a>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <!--Menü Alanı-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Menu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#developers"><i class="fa fa fa-code"></i> Our Team</a>
+          </li>
+          <!--Mesaj-->
+          <div class="modal fade" id="developers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Developers</h5>
+                </div>
+                <div class="modal-body">
+                  Manly (Software Developer) 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa fa-toggle-on"></i> Theme
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" onclick="daymode();return false;" id="light">Light Theme</a>
+              <a class="dropdown-item" href="#" onclick="nightmode();return false;" id="dark">Dark Theme</a>
+              <script type="text/javascript">
+                function daymode()
+                {
+                  document.querySelector('#js').classList.remove('bg-dark','text-white');
+                }
+                function nightmode()
+                {
+                  document.querySelector('#js').classList.add('bg-dark','text-white');
+                }
+              </script>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa fa fa-language"></i> Language
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" onclick="doGTranslate('en|de');return false;" class="nturl">Deutsch</a>
+              <a class="dropdown-item" href="#" onclick="doGTranslate('en|en');return false;" class="nturl selected">English</a>
+              <a class="dropdown-item" href="#" onclick="doGTranslate('en|es');return false;" class="nturl">Español</a>
+              <a class="dropdown-item" href="#" onclick="doGTranslate('en|hr');return false;" class="nturl">Hrvatski</a>
+              <a class="dropdown-item" href="#" onclick="doGTranslate('en|it');return false;" class="nturl">Italiano</a>
+              <a class="dropdown-item" href="#" onclick="doGTranslate('en|pl');return false;" class="nturl">Polski</a>
+              <a class="dropdown-item" href="#" onclick="doGTranslate('en|pt');return false;" class="nturl">Português</a>
+              <a class="dropdown-item" href="#" onclick="doGTranslate('en|tr');return false;" class="nturl">Türkçe</a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Ana Bölüm-->
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('http://cdn.akamai.steamstatic.com/steamcommunity/public/images/clans/12074189/847651556dd7c832cc4d4852c7d0e6addac0b81b.jpg') !important;background-position:center;align-items:center;">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-dark btn-lg text-primary" onclick="window.location='game?clientid=<?php echo sha1(rand(1, 999999)) ?>&auth=<?php echo sha1(rand(1, 999999)) ?>&ref=home'" style="text-decoration:none;cursor: pointer;">Play Now!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://www.gamersglobal.de/sites/gamersglobal.de/files/news/teaser/2448/ShakesAndFidget_Screenshot03.jpg') !important;">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-dark btn-lg text-primary" onclick="window.location='game?clientid=<?php echo sha1(rand(1, 999999)) ?>&auth=<?php echo sha1(rand(1, 999999)) ?>&ref=home'" style="text-decoration:none;cursor: pointer;">Play Now!</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Geri</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">İleri</span>
+      </button>
+    </div>
+
+    <div class="container marketing">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Register For Free Start Playing!</h2>
+          <p class="lead">You can register and play our game for free.</p>
+        </div>
+        <div class="col-md-5" style="background-image: url('https://www.sfgame.web.tr/choose_class/img/chooseclass/demonhunter.png');align-items:center;margin-top: -120px;">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">New Characters Added! </h2>
+          <p class="lead">Our in-game innovations are waiting for you.</p>
+        </div>
+        <div class="col-md-5 order-md-1" style="background-image: url('https://www.sfgame.web.tr/choose_class/img/chooseclass/warlock.webp');margin-top: -150px;">
+          </svg>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    </div>
+
+    <!--Footer-->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back To Top</a></p>
+      <p>&copy; Coded By Manly <?php echo date('Y'); ?> All Rights Reserved</p><br>
+    </footer>
+  </main>
+
+  <!--Javascript-->
+  <script type="text/javascript">
+    jQuery('.switcher .selected').click(function() {
+      if (!(jQuery('.switcher .option').is(':visible'))) {
+        jQuery('.switcher .option').stop(true, true).delay(100).slideDown(500);
+        jQuery('.switcher .selected a').toggleClass('open')
+      }
+    });
+    jQuery('.switcher .option').bind('mousewheel', function(e) {
+      var options = jQuery('.switcher .option');
+      if (options.is(':visible')) options.scrollTop(options.scrollTop() - e.originalEvent.wheelDelta);
+      return false;
+    });
+    jQuery('body').not('.switcher').mousedown(function(e) {
+      if (jQuery('.switcher .option').is(':visible') && e.target != jQuery('.switcher .option').get(0)) {
+        jQuery('.switcher .option').stop(true, true).delay(100).slideUp(500);
+        jQuery('.switcher .selected a').toggleClass('open')
+      }
+    });
+  </script>
+
+  <li style="display:none" id="google_translate_element2"></li>
+  <script type="text/javascript">
+    function googleTranslateElementInit2() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: true
+      }, 'google_translate_element2');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+  <script type="text/javascript">
+    function GTranslateGetCurrentLang() {
+      var keyValue = document.cookie.match('(^|;) ?googtrans=([^;]*)(;|$)');
+      return keyValue ? keyValue[2].split('/')[2] : null;
+    }
+
+    function GTranslateFireEvent(element, event) {
+      try {
+        if (document.createEventObject) {
+          var evt = document.createEventObject();
+          element.fireEvent('on' + event, evt)
+        } else {
+          var evt = document.createEvent('HTMLEvents');
+          evt.initEvent(event, true, true);
+          element.dispatchEvent(evt)
+        }
+      } catch (e) {}
+    }
+
+    function doGTranslate(lang_pair) {
+      if (lang_pair.value) lang_pair = lang_pair.value;
+      if (lang_pair == '') return;
+      var lang = lang_pair.split('|')[1];
+      if (GTranslateGetCurrentLang() == null && lang == lang_pair.split('|')[0]) return;
+      var teCombo;
+      var sel = document.getElementsByTagName('select');
+      for (var i = 0; i < sel.length; i++)
+        if (sel[i].className == 'goog-te-combo') teCombo = sel[i];
+      if (document.getElementById('google_translate_element2') == null || document.getElementById('google_translate_element2').innerHTML.length == 0 || teCombo.length == 0 || teCombo.innerHTML.length == 0) {
+        setTimeout(function() {
+          doGTranslate(lang_pair)
+        }, 500)
+      } else {
+        teCombo.value = lang;
+        GTranslateFireEvent(teCombo, 'change');
+        GTranslateFireEvent(teCombo, 'change')
+      }
+    }
+    if (GTranslateGetCurrentLang() != null) jQuery(document).ready(function() {
+      jQuery('div.switcher div.selected a').html(jQuery('div.switcher div.option').find('img[alt="' + GTranslateGetCurrentLang() + '"]').parent().html());
+    });
+  </script>
+  <script src="https://use.fontawesome.com/452826394c.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
